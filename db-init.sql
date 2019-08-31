@@ -1,1 +1,1 @@
-CREATE DATABASE graphql;
+CREATE DATABASE graphqldemo;
