@@ -1,0 +1,42 @@
+[
+  {
+    "model": "users.favouritebooks",
+    "pk": "3aed1b3b-bbba-419d-a17b-4b708afe5f25",
+    "fields": {
+      "username": "user1",
+      "book": "eebb1eb5-fba5-4532-b62c-6a2f0e3cb1ea"
+    }
+  },
+  {
+    "model": "users.favouritebooks",
+    "pk": "dbdcae56-e7b7-4a6e-a92b-277154b5f656",
+    "fields": {
+      "username": "user1",
+      "book": "1104d27d-2c39-4879-ae5c-d9b2cef5c264"
+    }
+  },
+  {
+    "model": "users.favouritebooks",
+    "pk": "40f3b2d7-cc16-4e54-9f8e-9beff7d1fb63",
+    "fields": {
+      "username": "user2",
+      "book": "eebb1eb5-fba5-4532-b62c-6a2f0e3cb1ea"
+    }
+  },
+  {
+    "model": "users.favouritebooks",
+    "pk": "9cacbd92-2c87-4454-9ce6-88bc21d5aff6",
+    "fields": {
+      "username": "user2",
+      "book": "0ff534cd-3bb3-49d5-8dc1-98d96fa55635"
+    }
+  },
+  {
+    "model": "users.favouritebooks",
+    "pk": "be7be256-3864-4544-8500-f224eedb97f4",
+    "fields": {
+      "username": "user2",
+      "book": "ef5cf623-b510-4c5c-8beb-7cb90f8bf772"
+    }
+  }
+]

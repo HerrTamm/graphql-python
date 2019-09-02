@@ -1,0 +1,29 @@
+[
+  {
+    "model": "users.user",
+    "pk": "user1",
+    "fields": {
+      "password": "$2y$12$Cp/Sm9eLu.Jzv4CgW5.SnuMcQssBsXpbHh9HYIW0AbbtmGIw4zVyi",
+      "email": "user1@email.com",
+      "age": 11
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "user2",
+    "fields": {
+      "password": "$2y$12$H.73/dsxjBnMWH5AgdIGGekv0mk08lgJAtZYN2/S5tvupiYOLHUXK",
+      "email": "user2@email.com",
+      "age": 12
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "user3",
+    "fields": {
+      "password": "$2y$12$GlSyPgvpCRA9veN9SIcTQekOynuSXMNVwx03y6mhlfFu/NP.XMtVq",
+      "email": "user3@email.com",
+      "age": 13
+    }
+  }
+]
