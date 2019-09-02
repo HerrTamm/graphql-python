@@ -10,10 +10,22 @@ class User(models.Model):
     def __str__(self):
         return self.username
 
+class Book(models.Model):
+    book_uuid = models.UUIDField(default=uuid4, editable=False, unique=False, primary_key=True)
+    title = models.CharField(max_length=40)
+    author = models.CharField(max_length=40)
+    released = models.DateField()
+
+    def __str__(self):
+        return self.book_uuid
+
 class FavouriteBooks(models.Model):
-    uuid = models.UUIDField(default=uuid4, editable=False, unique=False, primary_key=True)
+    favourite_books_uuid = models.UUIDField(default=uuid4, editable=False, unique=False, primary_key=True)
     username = models.CharField(max_length=20)
-    book = models.UUIDField(default=uuid4, editable=False, unique=False)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.favourite_books_uuid
 
     class Meta:
         unique_together = [['username', 'book']]
@@ -21,9 +33,3 @@ class FavouriteBooks(models.Model):
             models.Index(fields=['username']),
             models.Index(fields=['book']),
         ]
-
-class Book(models.Model):
-    uuid = models.UUIDField(default=uuid4, editable=False, unique=False, primary_key=True)
-    name = models.CharField(max_length=40)
-    author = models.CharField(max_length=40)
-    released = models.DateField()
